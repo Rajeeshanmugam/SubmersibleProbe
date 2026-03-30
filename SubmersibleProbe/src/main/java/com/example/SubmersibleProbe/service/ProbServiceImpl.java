@@ -18,7 +18,7 @@ public class ProbServiceImpl {
 
     public ArrayList<String> executeCommands(SubmersibleProbeRequest request)  {
         visitedCoordinates = new ArrayList<>();
-        System.out.println("Incoming request"+request);
+        System.out.println("Incoming the request"+request);
         try{
         if(request.getCommandsArrayList() != null){
             request.getCommandsArrayList().stream().forEach(command -> {
